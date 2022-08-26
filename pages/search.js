@@ -8,7 +8,7 @@ import InfoCard from '../components/InfoCard'
 
 function Search({searchResults}) {
   const router=useRouter();
-  
+
   const {location,startDate,endDate,numberOfGuests}= router.query;
 //   console.log(new Date(startDate));
   const formattedStartDate=format(new Date(startDate),"dd MMMM yy");
@@ -30,7 +30,8 @@ function Search({searchResults}) {
                 <p className='button'>Rooms and lists</p>
                 <p className='button'>More Filters</p>
             </div>
-            {searchResults.map(item=>(
+            <div className='flex flex-col'>
+            {searchResults.map(({img,location,title,description,star,price,total})=>(
                  <InfoCard 
                   key={img}
                   img={img}
@@ -42,6 +43,7 @@ function Search({searchResults}) {
                   total={total}
                  />
             ))}
+            </div>
         </section>
       </main>
       <Footer />
