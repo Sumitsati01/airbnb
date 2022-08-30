@@ -10,6 +10,7 @@ import Footer from '../components/Footer'
 
 
 export default  function Home({exploreData,largeCard}:any){
+  
   return (
     <div className="">
       <Head>
@@ -17,7 +18,8 @@ export default  function Home({exploreData,largeCard}:any){
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* header */}
-     <Header />
+      
+     <Header placeholder />
       {/* banner */}
       <Banner />
      <main className='max-w-7xl mx-auto px-8 sm:px-16'>
