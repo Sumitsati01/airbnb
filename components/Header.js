@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image' 
 import {SearchIcon ,GlobeAltIcon,UserCircleIcon,UserIcon,MenuIcon} from '@heroicons/react/solid'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
